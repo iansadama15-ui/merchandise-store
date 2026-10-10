@@ -1,0 +1,75 @@
+services:
+  proxy:
+    build: ./proxy
+    image: merchandise/proxy:
+    ports:
+      - "8080:80"
+    depends_on:
+      - frontend
+      - product-api
+      - order-api
+    restart: unless-stopped
+    networks:
+      - merchandise-net
+
+  frontend:
+    build: ./frontend
+    image: merchandise/frontend:
+    restart: unless-stopped
+    networks:
+      - merchandise-net
+
+  product-api:
+    build: ./product-api
+    image: merchandise/product-api:
+    environment:
+      DB_HOST: db
+      DB_NAME: merchandise_db
+      DB_USER: ${DB_USER}
+      DB_PASSWORD: ${DB_PASSWORD}
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+    networks:
+      - merchandise-net
+
+  order-api:
+    build: ./order-api
+    image: merchandise/order-api:
+    environment:
+      DB_HOST: db
+      DB_NAME: merchandise_db
+      DB_USER: ${DB_USER}
+      DB_PASSWORD: ${DB_PASSWORD}
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+    networks:
+      - merchandise-net
+
+  db:
+    build: ./db
+    image: merchandise/db:
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+      MYSQL_DATABASE: merchandise_db
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - db-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped
+    networks:
+      - merchandise-net
+
+volumes:
+  db-data:
+
+networks:
+  merchandise-net:
