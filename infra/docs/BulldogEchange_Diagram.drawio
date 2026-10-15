@@ -1,0 +1,134 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="llJBbpQSnvSv2d2R8pvI">
+    <mxGraphModel dx="1776" dy="969" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="mxhVMgT5Y8QL2PMsTQbG-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="USER" vertex="1">
+          <mxGeometry height="60" width="120" x="340" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mxhVMgT5Y8QL2PMsTQbG-2" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" value="INTERNET" vertex="1">
+          <mxGeometry height="80" width="120" x="330" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="mxhVMgT5Y8QL2PMsTQbG-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="NGINX REVERSE PROXY&lt;div&gt;(PORT 80)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="330" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="mxhVMgT5Y8QL2PMsTQbG-4" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;curved=1;curveGeometry=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" x="-0.2928" as="geometry">
+            <Array as="points" />
+            <mxPoint x="105" y="310" as="sourcePoint" />
+            <mxPoint x="675" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mxhVMgT5Y8QL2PMsTQbG-5" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" x="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="110" y="310" as="sourcePoint" />
+            <mxPoint x="110" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mxhVMgT5Y8QL2PMsTQbG-7" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" x="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="670" y="310" as="sourcePoint" />
+            <mxPoint x="670" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mxhVMgT5Y8QL2PMsTQbG-8" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="FRONTEND&lt;div&gt;(CONTAINER)&lt;/div&gt;&lt;div&gt;POER 80&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="50" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="mxhVMgT5Y8QL2PMsTQbG-9" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="EQUIPMENT API&lt;div&gt;(CONTAINER)&lt;/div&gt;&lt;div&gt;PORT 8000&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="340" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="mxhVMgT5Y8QL2PMsTQbG-10" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="BARROW API&lt;div&gt;(CONTAINER)&lt;/div&gt;&lt;div&gt;PORT 8001&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="610" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="mxhVMgT5Y8QL2PMsTQbG-11" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" x="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="399.5" y="310" as="sourcePoint" />
+            <mxPoint x="399.5" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mxhVMgT5Y8QL2PMsTQbG-12" edge="1" parent="1" source="mxhVMgT5Y8QL2PMsTQbG-2" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0.927;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" x="0.9889" as="geometry">
+            <Array as="points" />
+            <mxPoint x="389.5" y="200" as="sourcePoint" />
+            <mxPoint x="389.5" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mxhVMgT5Y8QL2PMsTQbG-13" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" x="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="399.5" y="90" as="sourcePoint" />
+            <mxPoint x="399.5" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mxhVMgT5Y8QL2PMsTQbG-14" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;curved=1;curveGeometry=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" x="-0.2928" as="geometry">
+            <Array as="points" />
+            <mxPoint x="400" y="490" as="sourcePoint" />
+            <mxPoint x="680" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mxhVMgT5Y8QL2PMsTQbG-15" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;curved=1;curveGeometry=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" x="-0.2928" as="geometry">
+            <Array as="points" />
+            <mxPoint x="680" y="470" as="sourcePoint" />
+            <mxPoint x="680" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mxhVMgT5Y8QL2PMsTQbG-16" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" x="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="399.5" y="490" as="sourcePoint" />
+            <mxPoint x="399.5" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mxhVMgT5Y8QL2PMsTQbG-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="POSTGRESQL DATABASE&lt;div&gt;(CONTAINER)&lt;/div&gt;&lt;div&gt;PORT 5432&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="220" x="340" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="mxhVMgT5Y8QL2PMsTQbG-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="PERSISTENT VOLUME&lt;div&gt;(POSTGRES_DATA)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="630" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="mxhVMgT5Y8QL2PMsTQbG-19" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" x="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="520" y="490" as="sourcePoint" />
+            <mxPoint x="520" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mxhVMgT5Y8QL2PMsTQbG-21" edge="1" parent="1" style="endArrow=classic;startArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="560" y="569.5" as="sourcePoint" />
+            <mxPoint x="630" y="569.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mxhVMgT5Y8QL2PMsTQbG-22" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Bulldog Exchange&lt;/h1&gt;&lt;p&gt;System Architecture Diagram&lt;/p&gt;" vertex="1">
+          <mxGeometry height="120" width="250" x="20" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="mxhVMgT5Y8QL2PMsTQbG-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="A containerized multi-module application with Nginx reverse proxy, multiple services, and a PostgreSQL database using Docker." vertex="1">
+          <mxGeometry height="30" width="290" x="540" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="mxhVMgT5Y8QL2PMsTQbG-24" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="- All services run in Docker containers&lt;div&gt;- Nginx acts as a reverse proxy&lt;/div&gt;&lt;div&gt;- Services communicate through a Docker network&lt;/div&gt;&lt;div&gt;-PostgreSQL uses a persistent volume for data&lt;/div&gt;&lt;div&gt;- Accesible via a single entry point (Nginx)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="330" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="mxhVMgT5Y8QL2PMsTQbG-25" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Stores application data&lt;div&gt;(equipment, borrowing records, users, etc.)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="240" x="340" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="mxhVMgT5Y8QL2PMsTQbG-27" parent="1" style="text;strokeColor=none;fillColor=none;html=1;fontSize=17;fontStyle=1;verticalAlign=middle;align=center;autosizeText=1;" value="KEY POINTS:" vertex="1">
+          <mxGeometry height="30" width="120" x="50" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="mxhVMgT5Y8QL2PMsTQbG-33" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Serves the web application" vertex="1">
+          <mxGeometry height="30" width="150" x="40" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="mxhVMgT5Y8QL2PMsTQbG-34" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Handles equipment management" vertex="1">
+          <mxGeometry height="30" width="280" x="260" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="mxhVMgT5Y8QL2PMsTQbG-35" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Handles borrowing request" vertex="1">
+          <mxGeometry height="30" width="180" x="580" y="440" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

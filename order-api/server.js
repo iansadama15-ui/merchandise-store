@@ -23,7 +23,7 @@ app.post('/orders', async (req, res) => {
         let total = 0;
         for (const item of items) {
             const [product] = await pool.execute('SELECT price FROM products WHERE id = ?', [item.product_id]);
-            if (product.length === 0) return res.status(404).json({ error: Product  not found });
+            if (product.length === 0) return res.status(404).json({ error: "Product not found"});
             total += product[0].price * item.quantity;
         }
         const [orderResult] = await pool.execute(
