@@ -1,7 +1,7 @@
 services:
   proxy:
     build: ./proxy
-    image: merchandise/proxy:
+    image: merchandise/proxy:latest
     ports:
       - "8080:80"
     depends_on:
@@ -14,14 +14,14 @@ services:
 
   frontend:
     build: ./frontend
-    image: merchandise/frontend:
+    image: merchandise/frontend:latest
     restart: unless-stopped
     networks:
       - merchandise-net
 
   product-api:
     build: ./product-api
-    image: merchandise/product-api:
+    image: merchandise/product-api:latest
     environment:
       DB_HOST: db
       DB_NAME: merchandise_db
@@ -36,7 +36,7 @@ services:
 
   order-api:
     build: ./order-api
-    image: merchandise/order-api:
+    image: merchandise/order-api:latest
     environment:
       DB_HOST: db
       DB_NAME: merchandise_db
@@ -51,7 +51,7 @@ services:
 
   db:
     build: ./db
-    image: merchandise/db:
+    image: merchandise/db:latest
     environment:
       MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
       MYSQL_DATABASE: merchandise_db
